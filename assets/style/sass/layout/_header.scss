@@ -1,0 +1,320 @@
+.nav_top {
+    @include flex (space-between);
+    .nav_left{
+        @include flex ;
+        gap: 1.5rem;  
+        cursor: pointer;
+    }
+    .nav_right{
+        @include flex;
+        gap: 1.5rem;
+        cursor: pointer;
+    }
+    .az{
+        width: 3.2rem;
+        height: 3rem;
+    }
+    .search{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+    .logo{
+        font-family: $font_2;
+        font-size: 3.6rem;
+    }
+    .cart{
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    .user{
+        width: 2.4rem;
+        height: 2.4rem;
+    } 
+}
+
+#head_center{
+    font-family: $font_1;
+    margin-bottom: 5rem;  
+    .navbar_center ul{
+        @include flex ;
+        gap: 7rem;
+    }
+}
+
+.center{
+    @include flex ;
+    position: relative;
+    .center_left{
+        position: absolute;
+        top: 10rem;
+        left: 3rem;
+    }
+    .center_left h1{
+        width: 81rem;
+        font-size: 7.2rem;
+        font-family: $font_2;
+        line-height: 8.6rem;
+        font-weight: 700;    
+    }
+    .center_left p{
+        width: 44.7rem;
+        font-family: $font_1;
+        color: #2D2D2B;
+        line-height: 2.4; 
+    }
+    .center_left img{
+        width: 33rem;
+        height: 5.4rem;  
+    }
+    .center_right .img{
+        width: 91.3rem;
+        height: 75.7rem;
+        position: relative;
+    }
+    .center_right .blur{
+        width: 33rem;
+        height: 6rem;
+    } 
+}
+
+#main_bottom{
+    .cards{
+        @include flex;
+        gap: 2rem;
+    
+        .card{
+            @include flex;
+            width: 33rem;
+            height: 19.3rem;
+            position: relative; 
+        }
+        .element{
+            font-family: $font_1;
+            font-weight: 600;
+            line-height: 5rem;
+            position: absolute;
+            bottom: 0;
+            color: #EAE6DF;     
+        }
+    }
+ }
+
+ .btn2{
+    width: 9rem;
+    height: 4.2rem;
+    margin-left: 133rem;
+    margin-top: 2.9rem;
+    cursor: pointer;
+}
+
+.seperator{
+    top: 1rem;
+}
+
+
+.aboutus{
+    font-size: 4.8rem;
+    font-family: $font_2;
+    margin-top: 12.8rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    @include flex;
+    gap: 6.6rem;
+    
+}
+.aboutimg{
+    width: 68rem;
+    height: 41.2rem;
+}
+.learn{
+    font-family: $font_1;
+    font-size: 1.6rem;
+    font-weight: 400;
+    opacity: 80%;
+    line-height: 2.4rem;
+    width: 56.3rem;
+    margin-top: 18rem;
+}
+.learnimg{
+    width: 33rem;
+    height: 5.4rem;
+    margin-top: 4rem;
+    cursor: pointer;   
+}
+   .learnimg:hover{
+    background-color: #a35e1552;
+    overflow: hidden;
+    border-radius: 1rem;
+   }
+ 
+  
+.discount{
+    @include flex;
+    margin-top: 14rem;
+    position: relative;
+}
+.discounts{
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+.discounts h2{
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 5.2rem;
+    font-family: $font_2;
+}
+.discounts p{
+    width: 44.5rem;
+    font-family: $font_1;
+    opacity: 80%;
+    line-height: 2.4rem;
+}
+.shopbtn{
+    width: 33rem;
+    height: 5.4rem;
+    margin-left: 6rem;
+    margin-top: 2.5rem;
+}
+
+#products{
+    .product{
+        @include flex(start);
+        gap: 112rem;
+        margin-top: 12.8rem;
+    }
+    h3{
+        font-family: $font_2;
+        font-size: 4.8rem;
+        line-height: 5.2rem;
+        font-weight: 700;
+        
+    }
+    .seeall{
+        width: 6.3rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+}
+
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.productcard{
+    width: 33rem;
+    height: 38.1rem;
+    line-height: 4rem;
+}
+.productimg{
+    width: 33rem;
+    height: 26.7rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.heart{
+    @include flex;
+    width: 4.2rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    cursor: pointer;
+}
+
+.card_text p{
+        font-family: $font_1;
+        font-size: 2rem;
+        line-height: 2.3rem;
+}
+
+.card_text span{
+    font-family: $font_2;
+    font-size: 2rem;
+    color: #B8926A;
+    line-height: 2.8rem;
+}
+
+#mostpopular{
+    .popular{
+        @include flex(start);
+        gap: 112rem;
+        margin-top: 13rem;
+    }
+    h3{
+        font-family: $font_2;
+        font-size: 4.8rem;
+        line-height: 5.2rem;
+        font-weight: 700;
+        
+    }
+    .seeall{
+        width: 6.3rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+}
+
+#collections{
+    .collection{
+        @include flex(start);
+        gap: 95rem;
+        margin-top: 13rem;
+        margin-left: 3rem;
+    }
+    h3{
+        font-family: $font_2;
+        font-size: 4.8rem;
+        line-height: 5.2rem;
+        font-weight: 700;
+        
+    }
+    .seeall{
+        width: 6.3rem;
+        height: 2rem;
+        cursor: pointer;
+    }
+}
+
+#main_top{
+    .cards{
+        @include flex;
+        gap: 2rem;
+    
+        .card{
+            @include flex;
+            width: 44.6rem;
+            height: 26.7rem;
+            position: relative; 
+        }
+        .elementscol{
+            font-family: $font_1;
+            font-weight: 600;
+            line-height: 5rem;
+            position: absolute;
+            bottom: 0;
+            color: #EAE6DF;
+    
+        }
+    }
+}
+
+
+
+// .contactus{
+//     font-size: 4.8rem;
+//     font-family: $font_2;
+//     margin-top: 12.8rem;
+//     font-weight: 700;
+//     line-height: 5.2rem;
+//     // @include flex;
+//     // gap: 6.6rem; 
+// }
+
+// .contacts
